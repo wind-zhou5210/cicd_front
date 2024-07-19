@@ -7,7 +7,7 @@ export default function HomePage() {
   );
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/users").then((data) => {
+    axios.get("http://60.205.8.182/api/users").then((data) => {
       console.log(data);
       setUserList(data?.data);
     });
